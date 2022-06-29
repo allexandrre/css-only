@@ -1,0 +1,41 @@
+.btn-middle .btn{
+  position: relative;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ff7675;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn-middle .btn::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.middle-one::before{
+  width: 0%;
+  height: 100%;
+}
+
+.middle-one:hover::before{
+  width: 100%;
+}
+
+.middle-two::before{
+  width: 100%;
+  height: 0%;
+}
+
+.middle-two:hover::before{
+  height: 100%;
+}
